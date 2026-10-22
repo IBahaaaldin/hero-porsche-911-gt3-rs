@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Porsche 911 GT3 RS — Bespoke Motorsport Archive</title>
+  <meta name="description" content="A bespoke luxury motorsport portal featuring the Porsche 911 GT3 RS (992) and Weissach aerodynamic track weapons.">
+  <link rel="stylesheet" href="styles.css?v=porsche-gt3rs-v1">
+  <link rel="preload" href="assets/images/gt3rs-blue.webp" as="image">
+</head>
+<body class="editorial-white-body" data-car-page="gateway">
+  <!-- Ultra-Modern Floating Island Navbar -->
+  <div class="modern-nav-wrapper">
+    <header class="modern-floating-navbar">
+      <!-- Left: Porsche Motorsport Brand Monogram Crest -->
+      <a href="index.html" class="modern-nav-brand" title="Porsche GT Archive Home">
+        <div class="nav-brand-crest">
+          <span class="crest-monogram">GT3</span>
+        </div>
+        <div class="nav-brand-text">
+          <span class="brand-title">Porsche Motorsport</span>
+          <span class="brand-sub">911 GT3 RS (992) • Weissach Archive</span>
+        </div>
+      </a>
+
+      <!-- Right: Utility Controls (Sound Toggle, Rev Engine & Keyfob Chirp) -->
+      <div class="modern-nav-actions">
+        <button class="nav-sound-status-pill" id="btnToggleSound" type="button" title="Toggle Sound System">
+          <span class="sound-wave-bars">
+            <span class="bar bar-1"></span>
+            <span class="bar bar-2"></span>
+            <span class="bar bar-3"></span>
+          </span>
+          <span class="sound-text">Sound: ON</span>
+        </button>
+        <button class="btn-rev-engine" id="btnRevEngine" type="button" title="Rev Naturally Aspirated 9,000 RPM Flat-Six">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+          </svg>
+          <span>Rev Flat-6</span>
+        </button>
+        <button class="btn-keyfob" id="btnKeyfobTop" type="button" title="Test Porsche Keyfob Chirp">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+          </svg>
+          <span>Chirp</span>
+        </button>
+      </div>
+    </header>
+  </div>
+
+  <!-- Editorial White Vehicle Stage (100vh Single-Screen Canvas) -->
+  <main class="lambo-stage-wrapper">
+    <!-- Center Vehicle Display: Single Porsche 911 GT3 RS Artwork -->
+    <div class="lambo-vehicle-stage">
+      <div class="lambo-vehicle-card active" id="vehicleGt3rsBlue" data-car="gt3rs-blue">
+        <img 
+          src="assets/images/gt3rs-blue.webp" 
+          alt="Porsche 911 GT3 RS Weissach Blue Edition" 
+          class="lambo-truck-img"
+          width="2048" 
+          height="1142"
+          loading="eager"
+        >
+      </div>
+    </div>
+
+    <!-- Bottom Docked Spec Card (Segmented Design with Hairline Dividers) -->
+    <div class="lambo-dock-container">
+      <div class="lambo-dock-card">
+        <!-- Col 1: Brand & Model Designation with Brand Logo Icon -->
+        <div class="dock-col dock-brand-col">
+          <div class="dock-brand-icon-wrap">
+            <img src="assets/icons/porsche-crest-official.png" alt="Porsche Crest" id="dockBrandIcon" class="dock-brand-icon" loading="eager">
+          </div>
+          <div class="dock-brand-meta">
+            <span class="dock-brand-name" id="dockBrand">PORSCHE MOTORSPORT</span>
+            <span class="dock-model-name" id="dockModel">911 GT3 RS (992)</span>
+          </div>
+        </div>
+
+        <!-- Col 2: High-Performance Benchmark Specs -->
+        <div class="dock-col dock-specs-col">
+          <div class="dock-spec-item">
+            <span class="dock-spec-label">max speed</span>
+            <span class="dock-spec-val"><span id="dockSpeed">296</span> <span class="dock-unit">km/h</span></span>
+          </div>
+          <div class="dock-divider-v" aria-hidden="true"></div>
+          <div class="dock-spec-item">
+            <span class="dock-spec-label">0-100 km/h</span>
+            <span class="dock-spec-val"><span id="dockAccel">3.2</span> <span class="dock-unit">s</span></span>
+          </div>
+          <div class="dock-divider-v" aria-hidden="true"></div>
+          <div class="dock-spec-item">
+            <span class="dock-spec-label">HP</span>
+            <span class="dock-spec-val" id="dockHp">525</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
